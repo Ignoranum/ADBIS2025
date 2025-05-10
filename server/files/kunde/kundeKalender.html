@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blev kunde hos os</title>
+    <link rel="stylesheet" href="kundeKalender.css">
+</head>
+<body>
+    <div id="fylder"></div>
+
+    <main>
+        <div id="fylder2"><h2>Vælg dato og book us</h2></div>
+        <div class="calendar">
+            <div class="calendar-header">
+                <div class="month-year">May 2023</div>
+                <div class="nav-buttons">
+                    <button class="nav-button prev-month">&lt;</button>
+                    <button class="nav-button next-month">&gt;</button>
+                </div>
+            </div>
+            <div class="weekdays">
+                <div>Søn</div>
+                <div>Man</div>
+                <div>Tir</div>
+                <div>Ons</div>
+                <div>Tor</div>
+                <div>Fre</div>
+                <div>Lør</div>
+            </div>
+            <div class="days" id="calendar-days">
+                <!-- Days will be inserted here by JavaScript -->
+            </div>
+        </div>
+        <div class="main-box2">
+            <p>Følg trinene herunder for booking. Vi sender dig en bekræftelse og pris på e-mail, når du trykker bekræft.</p>
+            <form>
+                <div class="date-selection">
+                    <label for="description">1. dato</label>
+                    <input type="text" id="selected-date" placeholder="Valgte dato ses her" readonly>
+                </div>
+                <div class="description">
+                    <label for="description">2. beskrivelse</label>
+                    <textarea id="description" rows="4" placeholder="Skriv en kort beskrivelse af din forespørgsel..."></textarea>
+                </div>
+                <div class="customer-info">
+                    <label for="customerName customerID">3. navn og ID</label>
+                    <input type="text" id="customerName" name="customerName" placeholder="Navn" required>
+                    <input type="text" id="customerID" name="customerID" placeholder="Kunde ID" required>
+                </div>
+                <div class="priceCategory">
+                    <label for="priceCategory">4. priskategori</label>
+                    <p>Herunder vælges, om du vil have en samlet fast pris på forhånd eller en time pris.</p>
+                    <p>Læs mere om de forskellige priskategorier <a href="#">her</a></p>
+                    <div class="select-wrapper">
+                        <span class="select-icon">🔠</span> 
+                        <select id="priceCategory-select" class="styled-select">
+                            <option value="hourPay">Time Pris Plus &copy;</option>
+                            <option value="totalPay">Let Samlet &copy;</option>
+                        </select>
+                        <span class="select-arrow">▼</span> <!-- Simple "V" arrow -->
+                    </div>
+                </div>
+                <div class="privacy-policy">
+                    <input type="checkbox" id="privacy-policy" required>
+                    <label for="privacy-policy">Jeg accepterer <a href="#">privatlivspolitikken</a></label>
+                </div>
+
+                <button id="confirm-button">Bekræft</button>
+            </form>
+        </div>
+        <div class="main-box3"></div>
+
+    </main>
+    
+    <footer>
+        <p>Gardner Systems &copy; 2023</p>
+        <a href="#">Vilkår og betingelser</a>
+        <a href="#">Kontakt os</a>
+    </footer>
+    <script src="kundeKalender.js"></script>
+</body>
+</html>

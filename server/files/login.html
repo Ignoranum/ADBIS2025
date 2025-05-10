@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Tracker</title>
+    <link rel="stylesheet" href="stylesLogin.css">
+</head>
+<body>
+  <div class="container">
+    <div id="welcome-container" style="height: 20px;">
+      <br>
+      <h2 id="welcome">Velkommen til Gardner Systems</h2>
+      <h5>Få styr på arbejdet</h5>
+    </div>
+
+    <form method="post">
+    
+      <div class="form-container">
+
+        <input type="text" placeholder="Brugernavn" name="username" required>
+    
+        <input type="password" placeholder="Adgangskode" name="password" required>
+        
+        
+        <div class="form-container glemt-containter">
+          <span class="glemt"><a href="#">Glemt adgangskode?</a></span>
+        </div>
+        <br>
+        <button type="submit">Login</button>
+      </div>
+    
+    </form>
+    <div class="form-container opret-container">
+      <span class="opret">Har du ikke en bruger?&nbsp;<a href="#">Opret bruger</a></span>
+    </div>
+
+  </div>
+
+
+  <script src="scriptLogin.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Tracker</title>
+    <link rel="stylesheet" href="medarbejderKalender.css">
+</head>
+<body>
+
+    <header>
+        <div id="fylde"></div>
+        <div id="underHeader">
+            <span>
+                <h2>Velkommen&nbsp;</h2><h2 id="name-signedin"></h2>
+            </span>
+            <h5 style="overflow: visible; height: min-content;">Forespørgelser og reservationer</h5>
+        </div>
+        <div class="mobile-nav">
+            <button class="hamburger-btn" id="hamburgerBtn">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="/knap" class="nav-link">Check-in</a></li>
+                <li class="nav-item"><a href="/faktura" class="nav-link">Faktura</a></li>
+                <li class="nav-item"><a href="/medarbejderKalender" class="nav-link">Kalender</a></li>
+                <li class="nav-item"><a href="/profil" class="nav-link">Profil</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="fylder2"></div>
+        <div class="calendar">
+            <div class="calendar-header">
+                <div class="month-year">May 2023</div>
+                <div class="nav-buttons">
+                    <button class="nav-button prev-month">&lt;</button>
+                    <button class="nav-button next-month">&gt;</button>
+                </div>
+            </div>
+            <div class="weekdays">
+                <div>Søn</div>
+                <div>Man</div>
+                <div>Tir</div>
+                <div>Ons</div>
+                <div>Tor</div>
+                <div>Fre</div>
+                <div>Lør</div>
+            </div>
+            <div class="days" id="calendar-days">
+                <!-- Days will be inserted here by JavaScript -->
+            </div>
+        </div>
+        <div class="main-box2">
+            <p>Vælg en dato og derefter kan du vælge mellem forespørgelserne og reservationerne</p>
+            <form>
+                <div class="date-selection">
+                    <input type="text" id="selected-date" placeholder="Valgte dato ses her" readonly>
+                </div>
+                <div class="nav-between-events">
+                    <div class="nav-between-event nav-prev-event">&lt;</div>
+                    <input type="text" id="event-name" placeholder="forespørgsel/reservation" readonly>
+                    <div class="nav-between-event nav-next-event">&gt;</div>
+                </div>
+                <div class="customer-info">
+                    <label for="customerName customerID">Kunde navn og ID</label>
+                    <input type="text" id="customerName" name="customerName" placeholder="Navn" readonly>
+                    <input type="text" id="customerID" name="customerID" placeholder="Kunde ID" readonly>
+                </div>
+                <div class="description">
+                    <label for="description">Beskrivelse fra kunden</label>
+                    <textarea id="description" rows="4" placeholder="Har kunden ikke skrevet noget, så send e-mail" readonly></textarea>
+                </div>
+                <div class="priceCategory">
+                    <label for="priceCategory">Kunden har valgt priskategorien: </label>
+                    <div id="priceCategory">....</div>
+                </div>
+                <div class="customer-message">
+                    <label for="customerMessage">Kundebesked</label>
+                    <textarea id="customerMessage" rows="4" placeholder="Skriv en besked til kunden..."></textarea>
+                </div>
+
+                <p>Når du trykker <b>Accepter</b>, modtager kunden en bekræftigelse via e-mail. Når du trykker <b>E-mail</b>, så beder du kunden om flere oplysninger</p>
+                <p>Når du trykker <b>Annuler</b>, modtager kunden en annulering. Den skal begrundes med en gyldig årsag</p>
+                <p>Alle knapperne sender en e-mail til kunden med det, som er skrevet i boksen <i>kunde besked</i></p>
+                <div id="button-wrapper">
+                    <div id="accept-button">Accepter</div>
+                    <div id="E-mail-button">E-mail</div>
+                    <div id="cancel-button">Annuler</div>
+                </div>
+            </form>
+        </div>
+        <div class="main-box3"></div>
+    </main>
+
+    <div class="container">
+
+
+
+    </div>
+    <script src="medarbejderKalender.js"></script>
+</body>
+</html>

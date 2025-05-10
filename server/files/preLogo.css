@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ACD3A8;
+}
+
+body {
+    background-image: linear-gradient(#ACD3A8, #8AB2A6);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100dvb;
+}
+body span {
+    color: #3E3F5B;
+    padding: 10px;
+}
+body span a {
+    color: #151ce5;
+    text-decoration: none;
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 80%;
+}
+.signinOrOutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 100%;
+}
+.signin {
+    background-color: white;
+    min-height: 44px; /* Recommended minimum touch target size */
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent; /* Removes the blue tap highlight on iOS */
+    touch-action: manipulation; /* Improves responsiveness on touch devices */
+    /* Ensures no coping of the text while clicking the button */
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+
+    cursor: pointer; /* Show pointer cursor on desktop */
+}   
+
+.signin.active-touch {
+    background-color: #e0e0e0d6;
+    transform: scale(0.98);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+}
+.signout {
+    min-height: 44px; /* Recommended minimum touch target size */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+    border: 1px solid white;
+    -webkit-tap-highlight-color: transparent; /* Removes the blue tap highlight on iOS */
+    touch-action: manipulation; /* Improves responsiveness on touch devices */
+    /* Ensures no coping of the text while clicking the button */
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+
+    cursor: pointer; /* Show pointer cursor on desktop */
+}
+.signout.active-touch {
+    background-color: #e0e0e06d;
+    transform: scale(0.98);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+}

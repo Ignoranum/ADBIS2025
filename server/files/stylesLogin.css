@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ACD3A8;
+}
+
+body {
+    background-image: linear-gradient(#ACD3A8, #8AB2A6);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvb;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    height: 85dvh;
+}
+
+/* The welcoming */
+#welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 100%;
+    color: #3E3F5B;
+    text-align: center;
+}
+#welcome {
+    margin-bottom: 10px;
+}
+
+
+/* Bordered form */
+form {
+    padding: 10px;
+}
+  
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #3e3f5b32;
+    border-radius: 5px;
+    background-color: #efefef80;
+    font-size: medium;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #3E3F5B;
+    color: white;
+    min-height: 44px; /* Recommended minimum touch target size */
+    border-radius: 5px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: medium;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Add a hover effect for buttons */
+button.active-touch {
+    background-color: #3e3f5ba9;
+    transform: scale(0.98);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+}
+
+/* Add padding to containers */
+.form-container {
+padding: 16px;
+}
+
+.glemt-containter {
+    display: flex;
+    justify-content: end;
+    padding-top: 0px;
+}
+
+.glemt a {
+    color: white;
+    opacity: 0.8;
+    text-decoration: none;
+    font-size: smaller;
+    font-style: italic;
+}
+
+/* opret */
+.opret-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+}
+.opret {
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+}
+.opret a {
+    color: white;
+    opacity: 0.8;
+    text-decoration: none;
+}

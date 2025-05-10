@@ -1,0 +1,2 @@
+INSERT INTO Users (name, email, password, phoneNumber) VALUES ('hans', 'hanshansen@gmail.com', 'hansemanse', '2525');
+INSERT INTO Users (name, email, password, phoneNumber) VALUES ('jens', 'jensens@gmail.com', 'hansemanse', '3030');

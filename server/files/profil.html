@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Tracker</title>
+    <link rel="stylesheet" href="profil.css">
+</head>
+<body>
+
+    <header>
+        <div id="fylde"></div>
+        <div id="underHeader">
+            <span>
+                <h2>Velkommen&nbsp;</h2><h2 id="name-signedin"></h2>
+            </span>
+            <h5>Se og rediger din profil</h5>
+        </div>
+        <div class="mobile-nav">
+            <button class="hamburger-btn" id="hamburgerBtn">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="/knap" class="nav-link">Check-in</a></li>
+                <li class="nav-item"><a href="/faktura" class="nav-link">Faktura</a></li>
+                <li class="nav-item"><a href="/medarbejderKalender" class="nav-link">Kalender</a></li>
+                <li class="nav-item"><a href="/profil" class="nav-link">Profil</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+       <form>
+        <div>
+            <label>Navn</label>
+            <input type="text" value="hans">
+        </div>
+        <div>
+            <label>E-mail</label>
+            <input type="text" value="hansemanse@mail.dk">
+        </div>
+        <div>
+            <label>Adgangskode</label>
+            <input type="password">
+        </div>
+        <button id="confirm-button">Bekræft ny adgangskode</button>
+       </form>
+    </main>
+
+    <div class="container">
+
+
+
+    </div>
+    <script src="profil.js"></script>
+</body>
+</html>

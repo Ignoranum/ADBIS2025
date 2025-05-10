@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="modal-container" style="display: none;">
+        <div class="modal-content">
+            <span>Infoboks</span>
+            <div id="rangeText"></div>
+        </div>
+    </div>
+
+    <header>
+        <div id="fylde"></div>
+        <div id="underHeader">
+            <span>
+                <h2>Velkommen&nbsp;</h2><h2 id="name-signedin"></h2>
+            </span>
+            <h5>Her ser du din check-ind side</h5>
+        </div>
+        <div class="mobile-nav">
+            <button class="hamburger-btn" id="hamburgerBtn">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="/knap" class="nav-link">Check-in</a></li>
+                <li class="nav-item"><a href="/faktura" class="nav-link">Faktura</a></li>
+                <li class="nav-item"><a href="/medarbejderKalender" class="nav-link">Kalender</a></li>
+                <li class="nav-item"><a href="/profil" class="nav-link">Profil</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="sideBar bar1"></div>
+        <div id="overview">
+            <h2>Overblik</h2>
+            <div class="overview-content">
+                <div class="overview-item">
+                    <h4>Timer arbejdet sidste check-ind</h4>
+                    <p id="hours-worked"></p>
+                </div>
+                <div class="overview-item">
+                    <h4>Antal timer siden sidste arbejde</h4>
+                    <p id="last-worked"></p>
+                </div>
+                <div class="overview-item">
+                    <h4>Samlet antal timer for lønperioden</h4>
+                    <p id="total-hours"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sideBar bar2"></div>
+    </main>
+
+    <div class="container">
+
+        <div class="selection-area">
+            <div class="select-wrapper">
+                <span class="select-icon">👤</span> 
+                <select id="coworker-select" class="styled-select">
+                    <option value="" id="standard-coworker">?</option>
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+                <span class="select-arrow">▼</span> <!-- Simple "V" arrow -->
+            </div>
+        </div> 
+
+        <div class="slidecontainer">
+            <div id="stateText">...</div>
+            <input type="range" min="1" max="100" value="2" class="slider" id="myRange">
+        </div>
+        <br>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

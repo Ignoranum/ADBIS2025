@@ -1,0 +1,38 @@
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.logo {
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: #2e7d32;
+}
+.logo-icon {
+width: 100px;
+height: 100px;
+background: linear-gradient(135deg, #2e7d32, #43a047);
+border-radius: 50%;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.logo-icon::before {
+content: '';
+width: 40px;
+height: 40px;
+background-color: white;
+clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+position: absolute;
+top: 20px;
+}
+.logo-text {
+margin-top: 10px;
+font-size: 24px;
+font-weight: bold;
+}
