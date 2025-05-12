@@ -56,9 +56,21 @@ let currentDate = new Date();
 // Dummy events data
 const events = {
     '2025-4-25': [
-        { title: 'Reservation', time: 'København H', type: 'event-1', name: 'Henrik', id: '111', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', priceCategory: 'Let Samlet &copy;'},
-        { title: 'Reservationsd', time: 'Frideriksberg', type: 'event-2', name: 'Susanne', id: '222', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', priceCategory: 'Time Pris Plus &copy;'},
-        { title: 'Forespørgsel', time: 'Hellerup', type: 'event-3', name: 'Paul', id: '333', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', priceCategory: 'Let Samlet &copy;'}
+        { title: 'Reservation', location: 'København H', medarbejdere: ["hans", "jens"], type: 'event-1', name: 'Henrik', id: '111', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', priceCategory: 'Let Samlet &copy;'},
+        { title: 'Reservation', location: 'Frideriksberg', medarbejdere: ["hans", "jens"], type: 'event-1', name: 'Susanne', id: '222', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', priceCategory: 'Time Pris Plus &copy;'},
+        { title: 'Reservation', location: 'Hellerup', medarbejdere: ["hans"], type: 'event-1', name: 'Paul', id: '333', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', priceCategory: 'Let Samlet &copy;'}
+    ],
+    '2025-5-15': [
+        { title: 'Reservation', location: 'København H', medarbejdere: ["hans", "jens"], type: 'event-1', name: 'Henrik', id: '111', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', priceCategory: 'Let Samlet &copy;'},
+        { title: 'Reservation', location: 'Frideriksberg', medarbejdere: ["hans", "jens"], type: 'event-1', name: 'Susanne', id: '222', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', priceCategory: 'Time Pris Plus &copy;'},
+        { title: 'Forespørgsel', location: 'Hellerup', medarbejdere: ["hans"], type: 'event-3', name: 'Paul', id: '333', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', priceCategory: 'Let Samlet &copy;'}
+    ],
+    '2025-6-4': [
+        { title: 'Forespørgsel', location: 'Hellerup', medarbejdere: ["hans"], type: 'event-3', name: 'Paul', id: '333', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', priceCategory: 'Let Samlet &copy;'}
+    ],
+    '2025-6-17': [
+        { title: 'Forespørgsel', location: 'Frideriksberg', medarbejdere: ["hans", "jens"], type: 'event-3', name: 'Susanne', id: '222', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', priceCategory: 'Time Pris Plus &copy;'},
+        { title: 'Forespørgsel', location: 'Hellerup', medarbejdere: ["hans"], type: 'event-3', name: 'Paul', id: '333', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', priceCategory: 'Let Samlet &copy;'}
     ]
 };
 
@@ -120,7 +132,7 @@ function renderCalendar() {
                 popupHTML += `
                     <div class="event-popup-item">
                         <div class="event-popup-title">${event.title}</div>
-                        <div class="event-popup-time">${event.time}</div>
+                        <div class="event-popup-time">${event.location}</div>
                     </div>
                 `;
             });
