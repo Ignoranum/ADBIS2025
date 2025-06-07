@@ -7,5 +7,5 @@
 Bemærk: mobilapp! siden skal være 600px eller mindre i bredden
 
 For at logge ind brug:
-Adgangskode: hans
-Brugernavn: hansemanse
+Brugernavn:   hans
+Adgangskode:  hansemanse
